@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小宅的技术博客</title>
+  <title>小宅的博客</title>
   
-  <subtitle>无</subtitle>
+  <subtitle>你想批评指点四周风景，你首先要爬上屋顶。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://december2580.github.io/"/>
