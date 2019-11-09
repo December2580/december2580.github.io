@@ -26,23 +26,4 @@
         <tag>next主题美化</tag>
       </tags>
   </entry>
-  <entry>
-    <title>test</title>
-    <url>/2019/11/09/test/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>测试博客</title>
-    <url>/2019/11/07/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>就是一篇测试博客，没啥内容，嘿嘿~</p>
-]]></content>
-      <categories>
-        <category>hexo博客搭建</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>测试</tag>
-        <tag>标签</tag>
-      </tags>
-  </entry>
 </search>
