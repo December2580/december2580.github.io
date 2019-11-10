@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>hexo搭建博客时遇到的问题</title>
-    <url>/2019/11/09/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.html</url>
     <content><![CDATA[<h2 id="hexo-g-执行后不生成index-html"><a href="#hexo-g-执行后不生成index-html" class="headerlink" title="hexo g 执行后不生成index.html"></a>hexo g 执行后不生成index.html</h2><p>&emsp;&emsp;这里也只是提出几种可能性:</p>
 <ul>
 <li>我当时执行 npm install 之后重新执行一遍就可以了</li>
