@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://december2580.github.io/"/>
-  <updated>2019-11-09T12:03:09.246Z</updated>
+  <updated>2019-11-12T08:05:17.350Z</updated>
   <id>https://december2580.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git@git.coding.net: Permission denied (publickey)的解决办法</title>
+    <link href="https://december2580.github.io/git-git-coding-net-Permission-denied-publickey-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html"/>
+    <id>https://december2580.github.io/git-git-coding-net-Permission-denied-publickey-的解决办法.html</id>
+    <published>2019-11-12T06:29:16.000Z</published>
+    <updated>2019-11-12T08:05:17.350Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;报错如下：<br><img src="http://q0uiq01q3.bkt.clouddn.com/pd.png" alt=""> </p><p>&emsp;&emsp;但是我已经在站点配置文件配置好，并且已经在coding的项目中添加了公钥，但是请求连接时还是出现了问题。<br>&emsp;&emsp;解决办法：</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>执行   eval `ssh-agent`</span><br><span class="line"><span class="number">2.</span>执行   ssh-add ~/.ssh/rsa</span><br><span class="line"><span class="number">3.</span>执行   ssh-add –l</span><br><span class="line"><span class="number">4.</span>重新尝试连接  ssh -T <span class="symbol">git@</span>e.coding.net</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;之前一直使用的 ssh -T <a href="mailto:git@git.coding.net" target="_blank" rel="noopener">git@git.coding.net</a> 结果执行完上面三个指令还是连接不上，后来在Coding的官方文档中看到这个<br><img src="http://q0uiq01q3.bkt.clouddn.com/coding.png" alt=""></p><p>&emsp;&emsp;原来是连接指令错误….<br>&emsp;&emsp;这样就成功连接了。</p><p><img src="http://q0uiq01q3.bkt.clouddn.com/success.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&amp;emsp;&amp;emsp;报错如下：&lt;br&gt;&lt;img src=&quot;http://q0uiq01q3.bkt.clouddn.com/pd.png&quot; alt=&quot;&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;但是我已经在站点配置文件配置好，并且已经在coding的项目中添加了公钥，
+      
+    
+    </summary>
+    
+    
+      <category term="hexo博客搭建" scheme="https://december2580.github.io/categories/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="https://december2580.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo搭建博客时遇到的问题</title>
