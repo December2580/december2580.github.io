@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://december2580.github.io/"/>
-  <updated>2019-12-04T13:52:52.942Z</updated>
+  <updated>2019-12-06T06:41:24.839Z</updated>
   <id>https://december2580.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络相关学习笔记（一）</title>
+    <link href="https://december2580.github.io/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
+    <id>https://december2580.github.io/网络相关学习笔记.html</id>
+    <published>2019-12-06T06:28:49.000Z</published>
+    <updated>2019-12-06T06:41:24.839Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;最近在看计算机网络的一些内容，看完着实觉得自己当初学习这门课程的时候，划水划得厉害，一点都没有深入的去理解和思考，虽然现在也还是不够深入….随手整理了一些小的知识点，这里虽然标题带了个一，但也有可能是最后一篇，感觉项目好像做不下去了….虽然还没开始，唉。</p><ol><li><p>路由器实现了网关的功能，路由器基于ip协议。</p></li><li><p>以太网协议实现了局域网内部的计算机之间的通信，但是多个局域网之间无能为力，ip协议实现了局域网之间的通信，但是可能存在丢包的现象（缓存满了，新的数据包丢失），而且通信是主机对主机，tcp保证了通信的完整性和可靠性，防止丢包，通信是进程对进程。</p></li><li><p>tcp数据包的编号，SEQ。第一个包的编号是一定基础上生成的一个随机数（还记得当初阿里面试的时候被问过这个题，当时依稀记得在哪里看过是个随机数），假设为1，第一个包的长度为100，那么第二个包的编号为101，所以由一个数据包可以知道当前数据包和下一个数据包的编号，接收方也就便于还原。</p></li><li><p>确认消息ACK。ACK包含两部分信息，一是期待要收到的下一个数据包的编号，比如当发送方seq=1,length=100，此时接收方ack=101，对前面100字节进行确认，并期待收到101开头的数据包；二是当前接收方接收窗口的剩余容量。</p></li><li><p>重发机制：由上述我们知道，ACK会包含期待的下一个数据包的编号，当接受方没有收到期待的编号的数据包，会停在这个编号，不会增加，当发送方发现连续收到了三个相同的ACK，或者超时没有收到ACK，会重发ACK期待的数据包。</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&amp;emsp;&amp;emsp;最近在看计算机网络的一些内容，看完着实觉得自己当初学习这门课程的时候，划水划得厉害，一点都没有深入的去理解和思考，虽然现在也还是不够深入….随手整理了一些小的知识点，这里虽然标题带了个一，但也有可能是最后一篇，感觉项目好像做不下去了….虽然还没开始，
+      
+    
+    </summary>
+    
+    
+      <category term="计算机网络" scheme="https://december2580.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="计算机网络" scheme="https://december2580.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>从在浏览器中输入www.baidu.com到浏览器显示百度首页发生了什么</title>
